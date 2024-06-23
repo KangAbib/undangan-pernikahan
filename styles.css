@@ -1,0 +1,662 @@
+* {
+    padding: 0px;
+    margin: 0px;
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: bisque !important;
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.navbar {
+    background-color: #84563c33;
+    font-weight: bold;
+    font-size: 20px;
+    z-index: 2; /* Tambahkan z-index */
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan untuk efek sticky */
+}
+
+.home {
+  background-image: url("img/bg2.png");
+  background-repeat: no-repeat;
+  background-position: center left 425px; /* Tetap di tengah tetapi digeser ke kiri */
+  background-color: rgba(255, 255, 255, 0.475);
+}
+
+.home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.475); /* Ubah warna dan opacity sesuai keinginan */
+}
+
+.container .navbar-brand {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+/* CSS untuk Gambar Bunga */
+.asset2 {
+  position: absolute; /* Ubah menjadi absolute */
+  top: 70px; /* Atur ke bagian atas */
+  left: -24px; /* Atur ke bagian kiri */
+  width: 20%; /* Sesuaikan ukuran dengan kebutuhan */
+  height: auto;
+  margin: 0;
+}
+.asset3 {
+  position: absolute; /* Ubah menjadi absolute */
+  top: 70px; /* Atur ke bagian atas */
+  right: -24px; /* Atur ke bagian kiri */
+  width: 20%; /* Sesuaikan ukuran dengan kebutuhan */
+  height: auto;
+}
+
+
+
+.pembuka h1 {
+    font-family: "Noto Naskh Arabic", serif;
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 20px;
+    color: rgb(27, 10, 10);
+}
+
+.kalpembuka {
+  color: black; /* Atur warna teks menjadi hitam */
+    position: relative; /* Tambahkan position relative */
+    z-index: 1; /* Tambahkan z-index untuk memastikan teks di atas background image */
+}
+.kalpembuka h2 {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.kalpembuka h3 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.kalpembuka .no-style {
+    text-align: center; /* Atau gaya lain yang Anda inginkan */
+    margin-top: -10px; /* Atau sesuai dengan kebutuhan Anda */
+}
+
+.acara {
+    text-align: center;
+    margin-top: 40px;
+    color: black; /* Atur warna teks menjadi hitam */
+    position: relative; /* Tambahkan position relative */
+    z-index: 1; /* Tambahkan z-index untuk memastikan teks di atas background image */
+}
+
+.acara .keterangan h4{
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 0;
+    color: black; /* Atur warna teks menjadi hitam */
+    position: relative; /* Tambahkan position relative */
+    z-index: 1; /* Tambahkan z-index untuk memastikan teks di atas background image */
+}
+
+ .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -30px;
+    position: relative; /* Pastikan juga ada position relative di card-body */
+    z-index: 0; /* Atau z-index yang lebih rendah */
+  }
+
+  .keterangan {
+    display: flex;
+    margin-top: -70px;
+  }
+  
+  .keterangan .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .keterangan .gambar {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .keterangan .info {
+    flex: 1;
+    text-align: center;
+  }
+  
+  @keyframes spin-horizontal {
+    0% { transform: scaleX(1); }
+    100% { transform: scaleX(-1); }
+  }
+  
+  .keterangan .gambar img {
+    width: 50%;
+    height: auto;
+  }
+
+
+/* Resepsi */
+.bg {
+  margin-top: 20px;
+  background-image: url('img/bg.jpeg');
+  margin-bottom: -100px;
+}
+
+.judul {
+  text-align: center;
+  position: relative; /* Tambahkan position relative */
+  font-family: "Libre Baskerville";
+  font-weight: bold;
+  color: black;
+}
+
+.resepsi {
+  position: relative;
+  margin-top: -30px;
+}
+
+
+.info1 {
+  box-shadow: 0px 2px 2px 0px black;
+  margin-left: 400px;
+  margin-right: 400px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+}
+
+ .info1 h4{
+  text-align: center;
+  font-size: 20px;
+}
+
+@keyframes circle-in-hesitate {
+  0% {
+    clip-path: circle(0%);
+  }
+  40% {
+    clip-path: circle(40%);
+  }
+  100% {
+    clip-path: circle(125%);
+  }
+}
+
+[transition-style="in:circle:hesitate"] {
+  animation: 2.5s cubic-bezier(.25, 1, .30, 1) circle-in-hesitate both;
+}  
+
+.word h4 {
+  text-align: center;
+  font-size: 20px;
+  position: relative; /* Tambahkan position relative */
+    z-index: 1;
+}
+
+.info-word-divider {
+  width: 50%;
+  height: 2px;
+  background-color: black;
+  margin: 0 auto 20px auto; /* Atur margin agar garis tepat di tengah dan ada jarak di bawahnya */
+  margin-top: 0px;
+  position: relative; /* Tambahkan position relative */
+  z-index: 3;
+}
+
+.keluarga {
+  display: flex;
+    justify-content: space-between; /* Untuk memberi jarak antara elemen kiri dan kanan */
+    align-items: center; /* Untuk memastikan elemen sejajar secara vertikal */
+}
+
+.keluarga h3 {
+  font-size: 20px;
+  color: black;
+  position: relative; /* Tambahkan position relative */
+  z-index: 1;
+}
+
+.keluarga h1 {
+  font-size: 30px;
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+  color: black;
+  position: relative; /* Tambahkan position relative */
+    z-index: 1;
+}
+
+.bahagia {
+  text-align: center;
+  color: black;
+  margin-top: 20px;
+  font-family: "Libre Baskerville";
+}
+
+.keluarga {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px; /* Use gap to control spacing between items */
+  font-family: "Libre Baskerville";
+}
+
+.keluarga .kiri, .keluarga .kanan {
+  flex: 1; /* Flexbox will evenly distribute space */
+  text-align: center;
+}
+
+.last {
+  text-align: center;
+  font-size: 30px; /* Corrected from 'size' to 'font-size' */
+  color: black;
+}
+
+.pengantin-img {
+  width: 120px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  vertical-align: middle; /* Ensure the image is aligned vertically with the text */
+  margin-left: 25px;
+  
+}
+
+.utama {
+  font-size: 50px; /* Ensure it stands out */
+  font-weight: bold; /* Make it bolder if needed */
+  font-family: "Allura", cursive;
+
+}
+
+
+/* about */
+.center {
+  width: 100%;
+  text-align: center;
+  font-family: "Libre Baskerville";
+  font-weight: bold;
+  color: black;
+}
+.about p {
+  font-size: 20px;
+}
+.about h4 {
+  margin-right: 20px;
+}
+
+.about-img {
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 200px;
+  height: 300px;
+  box-shadow: rgba(4, 140, 198, 0.8) 0px 5px 10px;
+  transition: 1s;
+}
+
+.about-img-wrap {
+  display: flex;
+  justify-content: center; /* Mengubah menjadi justify-content: center; agar gambar sejajar */
+  align-items: center; /* Menambahkan align-items: center; agar gambar vertikal sejajar */
+}
+
+.about-img.photo-1 {
+  background-image: url("img/Gambar1.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.about-img.photo-1:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.about-img.photo-2 {
+  background-image: url("img/Gambar3.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.about-img.photo-2:hover {
+  transform: scale(1.1);
+}
+
+.about-img.photo-3 {
+  background-image: url("img/Gambar2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.about-img.photo-3:hover {
+  transform: scale(1.1) rotate(-5deg);
+}
+
+.about-img.photo-4 {
+  background-image: url("img/Gambar4.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.about-img.photo-4:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.about-img.photo-5 {
+  background-image: url("img/Gambar6.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.about-img.photo-5:hover {
+  transform: scale(1.1);
+}
+
+.about-img.photo-6 {
+  background-image: url("img/Gambar5.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.about-img.photo-6:hover {
+  transform: scale(1.1) rotate(-5deg);
+}
+
+.line {
+  width: 100%; /* Lebar garis disesuaikan dengan konten */
+  height: 2px;
+  border-radius: 10px;
+  background-color: rgba(12, 12, 12, 0.8);
+}
+
+.card-body {
+  box-shadow: 0px 2px 2px 0px black;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px; /* Padding di dalam card */
+  background-color: rgba(242, 242, 242, 0.486);
+  border-radius: 20px;
+  max-width: 600px; /* Lebar maksimum card */
+margin-top: 1px;
+}
+
+.about-img-wrap {
+  display: flex;
+  justify-content: space-between; /* Mengubah menjadi space-between agar gambar-gambar sejajar secara horizontal */
+  align-items: center; /* Menambahkan align-items: center; agar gambar-gambar sejajar secara vertikal */
+}
+
+.biodata {
+  display: flex;
+  text-align: left; /* Pastikan teks berada di kiri */
+  margin-top: 20px;
+}
+
+
+
+.biodata-content {
+  text-align: left; /* Align biodata content to the left */
+}
+
+
+.biodata img {
+  width: 100%; /* Make images responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.biodata h4,
+.biodata p {
+  text-align: left; /* Pastikan teks berada di kiri */
+}
+
+.carousel-control-next {
+  color: black;
+}
+.carousel-control-next:hover {
+  color: black;
+}
+.carousel-control-prev {
+  color: black;
+}
+.carousel-control-prev:hover {
+  color: black;
+}
+
+.loading-bar {
+  width: 100%;
+  height: 5px;
+  background-color: #ddd;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.progress {
+  width: 0;
+  height: 100%;
+  background-color: #3498db;
+  position: absolute;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+  * {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: bisque !important;
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 2vh; /* Ganti dengan ukuran font yang diinginkan */
+}
+
+  .pembuka h1 {
+    font-size: 4vh;
+  }
+
+  .kalpembuka h2 {
+    font-size: 3vh;
+  }
+
+  .kalpembuka h3 {
+    font-size: 2vh;
+  }
+
+  .acara h2 {
+    font-size: 3vh;
+    margin-top: -40px;
+  }
+
+  .acara .keterangan .info h4 {
+    font-size: 2.5vh; /* Adjust font size for "Minggu, 07 Juli 2024" and other text elements */
+  }
+
+  .keterangan {
+    margin-top: -20px;
+    margin-left: 20px;
+  }
+
+  .gambar {
+    display: none;
+  }
+
+  .Maps {
+    width: 100%; /* Full width of the container */
+    height: 200px; /* Adjust height as needed */
+    margin: 20px auto; /* Center align the map */
+    margin-top: 20px;
+  }
+
+  .Maps iframe {
+    width: 75%;
+    height: 75%;
+  }
+
+  .judul {
+    margin-top: -10px;
+    font-size: 4vh;
+  }
+
+  .info1 h4, .bahagia h3, .last h1 {
+    font-size: 2vh;
+  }
+
+  .word h4 {
+    font-size: 1.5vh;
+    margin-top: -30px;
+  }
+
+  .info-word-divider {
+    margin-top: -50px;
+  }
+
+  .info1, .word {
+    margin-bottom: 20px;
+    width: 90%;
+    max-width: 600px;
+  }
+  
+  .info1 h4, .word h4 {
+    margin: 5px 0;
+    text-align: center;
+  }
+  
+  .info-word-divider {
+    width: 80%;
+    margin: 20px 0;
+  }
+
+  .utama {
+    font-size: 4vh;
+  }
+
+  .header, .about, .card-body {
+    padding: 10px;
+  }
+
+  .pembatas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bahagia {
+    margin-top: -15px;
+  }
+
+  .keluarga .kiri,
+  .keluarga .kanan {
+    width: 45%;
+    line-height: 1.5;
+  }
+
+  .keluarga .kiri h3 {
+    font-size: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Center align text */
+    width: 100%; /* Full width of the parent container */
+    white-space: normal; /* Allow text to wrap to the next line */
+    line-height: 1.5; /* Adjust line height for better readability */
+    margin-left:50px; /* Reset margin */
+  }
+
+  .keluarga .kanan h3 {
+    font-size: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Center align text */
+    width: 100%; /* Full width of the parent container */
+    white-space: normal; /* Allow text to wrap to the next line */
+    line-height: 1.5; /* Adjust line height for better readability */
+    margin-right: 55px;
+    transform: translateX(-40%); /* Further adjust position to the left */
+    overflow: hidden; /* Clips overflowing content */
+  }
+
+  .last .utama img{
+    width:70px;
+    height: 70px;
+  }
+
+  .last h1{
+    font-size:30px;
+  }
+
+  .carousel-inner .biodata {
+    font-size: 2.5vh;
+  }
+
+  .biodata .line {
+    margin: 10px 0;
+  }
+
+  .center{
+    font-size: 4vh;
+    margin-top: -50px;
+  }
+
+  .about-img-wrap {
+    display: flex;
+    justify-content: center;
+    width: fit-content; /* Ensure this line is present and there are no typos */
+  }
+  .card-body{
+    margin-top: -30px;
+  }
+  
+  .about-img {
+    width: 250px;
+    height: 250px; /* Adjust height if needed */
+    margin: 20px;
+    text-align: center;
+    margin-left: 50px;
+  }
+  .biodata h4, .biodata p{
+    font-size: 2vh;
+  }
+
+  .about-img.photo-1{
+    display: none;
+  }
+  .about-img.photo-3{
+    display: none;
+  }
+
+  .about-img.photo-4{
+    display: none;
+  }
+  .about-img.photo-6{
+    display: none;
+  }
+  .bg{
+    margin-top: 200px;
+  }
+
+}
+
